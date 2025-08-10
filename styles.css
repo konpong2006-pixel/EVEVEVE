@@ -29,7 +29,7 @@ p.lead { opacity:.85; color:var(--sub); margin:0 0 16px;
 }
 
 .gif-wrap {
-  width:min(420px,90vw);
+  width:min(350px,90vw);
   aspect-ratio:1/1;
   margin:14px auto 18px;
   border-radius:16px; overflow:hidden;
@@ -99,4 +99,5 @@ a.btn {
   0%   { opacity: .2 }
   50%  { opacity: 1 }
   100% { opacity: .2 }
+
 }
