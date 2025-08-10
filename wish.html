@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>อยากได้อะไรมั้ยย 🎁</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<canvas id="confetti"></canvas>
+
+<section class="page" id="wish">
+  <div class="center card fade-in">
+    <h1>หนูอยากได้อะไรมั้ยย 🎁</h1>
+    <p class="lead">พิมพ์บอกมาได้เลย💖</p>
+
+    <!-- กล่องฟอร์มส่งเข้า Google Forms -->
+    <form id="gform" method="POST" target="hidden_iframe">
+      <div style="display:grid;gap:10px;max-width:720px;margin:0 auto">
+        <!-- ถ้าอยากเก็บชื่อเล่น เพิ่มช่องนี้ได้ (ใส่ entry แยกของคุณเอง) -->
+        <!-- <input class="input" name="entry.YOUR_NAME_ENTRY_ID" placeholder="ชื่อเล่นของน้อง (ไม่บังคับ)"> -->
+
+        <textarea class="input" id="wishText" name="" rows="5"
+          placeholder="เช่น อยากไปดูหนัง / อยากกินชาบู / อยากได้ดอกไม้..."></textarea>
+
+        <button class="btn" type="submit" id="sendBtn">ส่งคำตอบ ▶</button>
+        <small class="hint"></small>
+      </div>
+    </form>
+
+    <iframe name="hidden_iframe" style="display:none;"></iframe>
+
+    <!-- แจ้งผล -->
+    <div id="ok" style="display:none;margin-top:14px">
+      <p class="lead">ส่งคำตอบแล้วว</p>🥰</p>
+      <a class="btn" href="final.html">ถัดไป ▶</a>
+    </div>
+  </div>
+</section>
+
+<script src="script-wish.js" defer></script>
+</body>
+</html>
